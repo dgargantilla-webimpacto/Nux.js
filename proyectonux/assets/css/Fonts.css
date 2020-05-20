@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Nexa-Xbold";
+  src: url("/static/Fonts/Nexa/Nexa_V1_2012/Nexa\ Bold.otf");
+
+}
+
+@font-face {
+  font-family: "Nexa-Bold";
+  src: url("/static/Fonts/Nexa/Nexa_V1_2012/Nexa\ Light.otf");
+}
+
+@font-face {
+  font-family: "NexaHeavy";
+  src: url("/static/Fonts/Nexa/Nexa_V1_2012/Nexa\ W01\ Heavy.otf");
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("/static/Fonts/Lato-Regular/Lato-Regular.ttf");
+
+}

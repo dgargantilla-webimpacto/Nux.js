@@ -1,0 +1,182 @@
+@media screen and (max-width: 376px) {
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+
+  .fila3 {
+    /* width: 100%; */
+    height: 25px;
+  }
+
+  .span1 {
+    width: 34px;
+    height: 10px;
+  }
+
+  .span2 {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contenedor {
+    top: 0px;
+    border-radius: 0px;
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .contenedor {
+    top: 103px;
+    margin-bottom: 103px;
+
+    height: 1023px;
+    width: 700px;
+    /* width: 100%; */
+    border-radius: 8px;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .fila3 {
+    height: 25px;
+  }
+
+
+  .span3 {
+    width: 72px;
+    height: 30px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+/* @font-face {
+  font-family: "Nexa-Xbold";
+  src: url("/static/Fonts/Nexa/Nexa_V1_2012/Nexa\ Bold.otf");
+
+}
+
+@font-face {
+  font-family: "Nexa-Bold";
+  src: url("/static/Fonts/Nexa/Nexa_V1_2012/Nexa\ Light.otf");
+}
+
+@font-face {
+  font-family: "NexaHeavy";
+  src: url("/static/Fonts/Nexa/Nexa_V1_2012/Nexa\ W01\ Heavy.otf");
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("/static/Fonts/Lato-Regular/Lato-Regular.ttf");
+
+} */
+
+body {
+  background-color: #fa2398;
+  background-image: linear-gradient(180deg, #fa2398 0%, #dd1f94 100%) no-repeat center center;
+  background-size: auto;
+}
+
+.contenedor {
+  background: #ffffff;
+  box-shadow: 0 17px 26px 0 rgba(26, 27, 28, 0.1);
+}
+
+.c {
+  text-align: right;
+}
+
+.span1 {
+  display: inline;
+
+  font-family: Nexa-Xbold;
+  font-size: 14px;
+  color: #3B3B3B;
+  text-align: center;
+  line-height: 12px;
+}
+
+.span2 {
+  display: inline-block;
+
+
+  width: 120px;
+  /* height: 14px; */
+
+
+  font-family: Nexa-XBold;
+  font-size: 16px;
+  color: #3B3B3B;
+  text-align: center;
+  line-height: 13px;
+
+  text-decoration: underline #3B3B3B;
+}
+
+
+#img1 {
+  height: 24px;
+  width: 24px;
+}
+
+#img2 {
+  height: 24px;
+  width: 24px;
+}
+
+.new {
+  text-align: center;
+}
+
+.span3 {
+  display: inline-block;
+
+
+
+  font-family: Nexa-XBold;
+  /* font-size: 25px; */
+  color: #1A1B1C;
+  letter-spacing: 1px;
+  text-align: center;
+  /* line-height: 30px; */
+}
+
+.span4 {
+  display: inline-block;
+
+  font-size: 14px;
+  font-family: Lato-Regular;
+  letter-spacing: 0;
+  color: #84868A;
+  text-align: center;
+  line-height: 20px;
+}
+
+.filaicone .col-3 {
+  display: block;
+  text-align: center;
+}
+
+.filaicone img {
+  width: 29px;
+  height: 29px;
+}
+
+.filaicone span {
+  font-family: NexaHeavy;
+  font-size: 11px;
+  color: #3B3B3B;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 16px;
+}
