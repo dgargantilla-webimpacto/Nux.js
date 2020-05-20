@@ -21,6 +21,24 @@
   .span2 {
     width: 100px;
   }
+
+  .hr {
+    width: 33px;
+    margin: 5px;
+    background: #9EA0A4;
+  }
+
+  .hr2 {
+    width: 43px;
+    margin: 0px;
+    background: #9EA0A4;
+  }
+
+  .span5 {
+    width: 230px;
+    height: 12px;
+    font-size: 11px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -59,27 +77,28 @@
   }
 }
 
-/* @font-face {
+@font-face {
   font-family: "Nexa-Xbold";
-  src: url("/static/Fonts/Nexa/Nexa_V1_2012/Nexa\ Bold.otf");
-
+  /* src: url("./static/Fonts/Nexa/Nexa_V1_2012/Nexa\ Bold.otf"); */
+  src: url("/proyectonux/static/Fonts/Nexa/Nexa_V2_2020/WEB/NexaDemo-Bold.eot") format("embedded-opentype");
 }
 
 @font-face {
   font-family: "Nexa-Bold";
-  src: url("/static/Fonts/Nexa/Nexa_V1_2012/Nexa\ Light.otf");
+  /* src: url("/static/Fonts/Nexa/Nexa_V1_2012/Nexa\ Light.otf"); */
+  src: url("/proyectonux/static/Fonts/Nexa/Nexa_V2_2020/WEB/NexaDemo-Light.woff") format("woff");
 }
 
 @font-face {
   font-family: "NexaHeavy";
-  src: url("/static/Fonts/Nexa/Nexa_V1_2012/Nexa\ W01\ Heavy.otf");
+  /* src: url("./static/Fonts/Nexa/Nexa_V1_2012/Nexa\ W01\ Heavy.otf"); */
+  src: url("/Fonts/Nexa/Nexa_V1_2012/Nexa\ W01\ Heavy.ttf");
 }
 
 @font-face {
   font-family: "Lato-Regular";
-  src: url("/static/Fonts/Lato-Regular/Lato-Regular.ttf");
-
-} */
+  src: url("/proyectonux/static/Fonts/Lato-Regular/Lato-Regular.ttf") format("truetype");
+}
 
 body {
   background-color: #fa2398;
@@ -173,10 +192,22 @@ body {
 }
 
 .filaicone span {
+  display: block;
   font-family: NexaHeavy;
   font-size: 11px;
   color: #3B3B3B;
   letter-spacing: 0;
   text-align: center;
   line-height: 16px;
+}
+
+.span5 {
+  display: inline-block;
+  /* margin-right: 10px; */
+  letter-spacing: 0.3px;
+  font-family: Nexa-Bold;
+
+  color: #3B3B3B;
+  text-align: center;
+  line-height: 12px;
 }
