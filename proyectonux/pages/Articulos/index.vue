@@ -3,16 +3,22 @@
     <div class="row justify-content-center">
       <div class="col-8">
         <div class="list-group" v-for="(item, index) in articulos" :key="index">
-          <nuxt-link :to="`/Articulos/${item.id}`">{{item.titulo}}</nuxt-link>
+          <nuxt-link :to="`/Articulos/${item.id}`">{{ item.titulo }}</nuxt-link>
         </div>
-        <radio></radio>
+        <Radio nombre1="Hombre" nombre2="Mujer" />
+        <div class="row">
+          <div class="col-12">
+            <Cumpleaños />
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from "~/components/Radio.vue";
+import Radio from "@/components/Radio";
+import Cumpleaños from "@/components/Cumpleaños";
 export default {
   data() {
     return {
@@ -26,7 +32,8 @@ export default {
     };
   },
   components: {
-    Radio
+    Radio,
+    Cumpleaños
   }
 };
 </script>

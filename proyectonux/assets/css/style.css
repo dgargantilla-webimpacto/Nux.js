@@ -39,6 +39,14 @@
     height: 12px;
     font-size: 11px;
   }
+
+  .g {
+    margin-top: 40px;
+  }
+
+  label {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -70,8 +78,7 @@
 
 
   .span3 {
-    width: 72px;
-    height: 30px;
+    width: 100%;
     font-size: 25px;
     line-height: 30px;
   }
@@ -210,4 +217,22 @@ body {
   color: #3B3B3B;
   text-align: center;
   line-height: 12px;
+}
+
+label {
+  font-size: 12px;
+}
+
+/* .colcheck{
+
+} */
+small {
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 23px;
+  font-size: 11px;
+}
+
+.birth {
+  height: 21px;
 }

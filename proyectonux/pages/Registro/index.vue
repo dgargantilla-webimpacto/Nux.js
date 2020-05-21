@@ -18,7 +18,7 @@
           </div>
 
           <div class="row justify-content-around mt-5 filaLoguin">
-            <div class="col-8 col-sm-7 new">
+            <div class="col-8 col-sm-10 new">
               <h4 class="span3">Crear nueva cuenta</h4>
             </div>
           </div>
@@ -31,19 +31,19 @@
             </div>
           </div>
           <div class="row justify-content-center mt-3 filaicone">
-            <div class="col-3">
+            <div class="col-3 col-sm-2">
               <img src="~/assets/img/Delivery.svg" />
               <span>Envío gratuito</span>
             </div>
-            <div class="col-3">
+            <div class="col-3 col-sm-2">
               <img src="~/assets/img/best_price.svg" />
               <span>Mejor Precio</span>
             </div>
-            <div class="col-3">
+            <div class="col-3 col-sm-2">
               <img src="~/assets/img/lock.svg" />
               <span>Pago 100% seguro</span>
             </div>
-            <div class="col-3">
+            <div class="col-3 col-sm-2">
               <img src="~/assets/img/Superprice.svg" />
               <span>Ofertas exclusivas</span>
             </div>
@@ -67,10 +67,67 @@
             </div>
           </div>
 
-          <div class="row justify-content-center align-items-center mt-2 mt-sm-0 filaA2">
+          <div class="row justify-content-center align-items-center mt-4 mt-sm-0 filaA2">
             <hr class="hr2" />
             <span class="span5">ACCESO CON EMAIL Y CONTRASEÑA</span>
             <hr class="hr2" />
+          </div>
+          <div class="row justify-content-start align-items-center pl-2 g">
+            <Radio nombre1="Hombre" nombre2="Mujer" />
+          </div>
+          <div class="row justify-content-center align-items-center pl-2 pr-2 mt-3">
+            <div class="col-6 pr-2">
+              <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" class="form-control" id />
+              </div>
+            </div>
+            <div class="col-6 pl-2">
+              <div class="form-group">
+                <label>Apellidos</label>
+                <input type="text" class="form-control" id />
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center pl-2 pr-2">
+            <div class="col-12 col-sm-6">
+              <!-- <div class="row justify-content-start pl-2 pr-2 birth"> -->
+              <label>Tu cumpleaños</label>
+              <!-- </div> -->
+              <Cumpleaños />
+            </div>
+
+            <div class="col-12 col-sm-6 mt-2">
+              <div class="form-group">
+                <label>Email</label>
+                <input type="text" class="form-control" placeholder="Ej: tu@email.com" id />
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center pl-2 pr-2">
+            <div class="col-6 pr-2">
+              <Contraseña nombre="Contraseña" />
+            </div>
+            <div class="col-6 pl-2">
+              <Contraseña nombre="Repetir contraseña" />
+            </div>
+          </div>
+          <div class="row pl-2 pr-2 mt-4 mb-4">
+            <div class="col-10 mb-2 colcheck">
+              <Cbox contenido="Suscríbete a la Newsletter" />
+              <small
+                id="helpId"
+                class="form-text text-muted"
+              >Acceso exclusivo a noticias, nuevos productos, descuentos, sorteos y promociones especiales.</small>
+            </div>
+            <div class="col-12">
+              <Cbox contenido="Confirmo que he leído y acepto la política de privacidad." />
+            </div>
+          </div>
+          <div class="row pl-1 pr-1 pb-4">
+            <div class="col-12">
+              <Boton contenido="Regístrate" />
+            </div>
           </div>
         </div>
       </div>
@@ -79,13 +136,23 @@
 </template>
 
 <script>
-
-
+import Radio from "@/components/Radio";
+import Cumpleaños from "@/components/Cumpleaños";
+import Contraseña from "@/components/Contraseña";
+import Cbox from "@/components/Cbox";
+import Boton from "@/components/Boton";
 export default {
   //   layout: "Registro"
   head: {
     title: "Registrate"
   },
+  components: {
+    Radio,
+    Cumpleaños,
+    Contraseña,
+    Cbox,
+    Boton
+  }
 };
 </script>
 
